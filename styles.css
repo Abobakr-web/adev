@@ -190,7 +190,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-image: url(icons/coding_background.jpg);
+    background-image: url(coding_background.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
