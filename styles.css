@@ -190,7 +190,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-image: url(coding_background.jpg);
+    background-image: url(icons/coding_background.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
@@ -366,39 +366,67 @@ span{
     padding-bottom: 100px;
 }
 
-.html_logo_label{
+.seccss{
+    background-color: #FFF4A3;
+    padding-bottom: 100px;
+}
+
+.secjs{
+    background-color: #282A35;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.html_logo_label,
+.css_logo_label,
+.js_logo_label{
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.html{
+.html,
+.css,
+.js{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.html_logo{
+.html_logo,
+.css_logo{
     width: 100px;
 }
 
-.html_label{
+.js_logo{
+    width: 130px;
+    margin-right: -10px;
+}
+
+.html_label,
+.css_label,
+.js_label{
     font-size: 100px;
     font-weight: 700;
 }
 
-.mini_html_label{
+.mini_html_label,
+.mini_css_label,
+.mini_js_label{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.html_link{
+a{
     text-decoration-line: none;
 }
 
 
-.learn_html{
+.learn_html,
+.learn_css,
+.learn_js,
+.video_tutorial{
     border: none;
     background-color: #04AA6D;
     color: white;
@@ -406,12 +434,24 @@ span{
     display: block;
     width: 200px;
     font-size: 18px;
-    height: 50px;
+    height: 45px;
     transition: 0.3s;
 }
 
-.learn_html:hover{
+.video_tutorial{
+    margin-top: 20px;
+    background-color: #313a6d ;
+}
+
+.learn_html:hover,
+.learn_css:hover,
+.learn_js:hover{
     background-color: #028354;
+    cursor: pointer;
+}
+
+.video_tutorial:hover{
+    background-color: #282A35;
     cursor: pointer;
 }
 
@@ -421,9 +461,12 @@ span{
     height: 440px;
     margin: 50px;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
 }
 
-.html_example {
+.html_example_label,
+.css_example_label,
+.js_example_label{
     margin: 25px;
     margin-left: 20px;
     font-size: 24px;
@@ -440,19 +483,9 @@ span{
     font-size: 17px;
     font-weight: 100;
     font-family: monospace;
+    white-space: nowrap;
 }
 
-.blue {
-    color: blue;
-}
-
-.green {
-    color: green;
-}
-
-.black {
-    color: black;
-}
 
 
 @media (min-width: 1270px) {
@@ -554,6 +587,22 @@ span{
         font-size: 20px !important;
     }
 
+    .sechtml,
+    .seccss,
+    .secjs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .parent{
+        width: 500px;
+        margin: 50px;
+        margin-right: none;
+    }
+    .son{
+        width: 445px;
+    }
 
 }
 
@@ -647,20 +696,7 @@ span{
         font-size: 17px;
     }
 
-    .sechtml{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .parent{
-        width: 500px;
-        margin: 50px;
-        margin-right: none;
-    }
-    .son{
-        width: 445px;
-    }
+    
 }
 
 
@@ -771,6 +807,22 @@ span{
         width: 90%;
         height: auto;
     }
+
+    .html_label,
+    .css_label,
+    .js_label{
+        font-size: 75px;
+    }
+
+    .html_logo,
+    .css_logo{
+        width: 75px;
+    }
+
+    .js_logo{
+        width: 95px;
+    }
+
     .parent{
         display: none;
     }
