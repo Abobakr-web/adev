@@ -504,8 +504,13 @@ a{
     color: white;
     text-align: center;
     padding: 10px 0;
+    height: 90px;
     width: 100%;
-    font-family: 'Faculty Glyphic', sans-serif;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration-line: none;
 }
 
 .about{
@@ -545,7 +550,6 @@ a{
     justify-content: center;
     align-items: center;
 }
-
 
 
 @media (min-width: 1270px) {
