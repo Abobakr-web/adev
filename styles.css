@@ -187,10 +187,11 @@ body {
 
 .div1 {
     display: flex;
+    background-image: url(coding_background.jpg);
     flex-direction: column;
     align-items: center;
+    z-index: 5;
     color: white;
-    background-image: url(coding_background.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
@@ -210,6 +211,9 @@ body {
     font-weight: normal;
     font-size: 40px;
 }
+
+
+
 
 
 .sec1 {
@@ -504,13 +508,8 @@ a{
     color: white;
     text-align: center;
     padding: 10px 0;
-    height: 90px;
     width: 100%;
-    font-family: sans-serif;
-}
-
-a{
-    text-decoration-line: none;
+    font-family: 'Faculty Glyphic', sans-serif;
 }
 
 .about{
@@ -550,6 +549,7 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 
 
 @media (min-width: 1270px) {
@@ -898,34 +898,47 @@ a{
 
 
 @media (max-width: 640px) {
+    
     body {
         padding-top: 60px;
     }
 
+
+    
     .welcome {
         font-size: 25px;
     }
 
+
+    
     .unleash {
         font-size: 20px;
     }
 
+
+    
     .header {
         height: 60px;
     }
 
+
+    
     .logo {
         width: 35px;
         margin-top: 0px;
         margin-left: 5px;
     }
 
+
+    
     .logo_label {
         top: -10px;
         left: 45px;
         font-size: 25px;
     }
 
+
+    
     
 
     .witp, .wyslp, .htswp {
@@ -935,6 +948,8 @@ a{
         margin: 20px 10px;
     }
 
+
+    
     .programing_paragraph,
     .why_programing_paragraph,
     .htswp_paragraph,
@@ -952,8 +967,34 @@ a{
         text-align: left;
     }
 
+
+    
     .computer, .desk, .person {
         width: 100%;
         height: auto;
+    }
+
+
+    
+    .basics_label,
+    .html_label,
+    .css_label,
+    .js_label{
+        font-size: 55px;
+    }
+
+
+
+    
+    .basics_logo,
+    .html_logo,
+    .css_logo{
+        width: 55px;
+    }
+
+
+    
+    .js_logo{
+        width: 75px;
     }
 }
